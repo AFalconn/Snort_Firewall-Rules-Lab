@@ -1,0 +1,23 @@
+SNORT LAB — GITHUB WORKFLOW
+
+1. Extract this ZIP.
+2. Copy README.md and Snort-and-Firewall-Rules-Lab.pdf into the ROOT of your existing local Snort lab repository.
+   Do not copy them into the parent cybersecurity folder or into the Suricata/Wireshark repositories.
+3. Open Git Bash in the Snort repository root.
+4. Check:
+     pwd
+     git remote -v
+     git status
+   Confirm the remote is the Snort GitHub repository before pushing.
+5. You can run the included script from the repository root:
+     bash push-to-github.sh
+   Or run the commands manually:
+     git add README.md Snort-and-Firewall-Rules-Lab.pdf
+     git status
+     git commit -m "Add Snort and Firewall Rules lab documentation"
+     git push -u origin main
+   If your branch is not named main, use your current branch name instead.
+
+IMPORTANT:
+- This bundle includes the PDF that was uploaded in this chat. If you have a completed Word document with screenshots and prefer that version, place that .docx in the repository instead, and update the README link and git add command to use its exact filename.
+- The script asks you to confirm the remote before it commits and pushes.
